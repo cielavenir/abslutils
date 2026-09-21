@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.0)
-project(qtinterval)
+cmake_minimum_required(VERSION 3.13)
+project(qtinterval LANGUAGES CXX)
 
 find_package(pybind11 REQUIRED)
 find_package(Qt5Core REQUIRED)

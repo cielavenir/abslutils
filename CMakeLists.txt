@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(mujincontrollerclientcpppy LANGUAGES CXX)
+project(qtinterval LANGUAGES CXX)
 
 add_subdirectory(cmake)
 
