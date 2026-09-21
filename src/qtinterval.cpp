@@ -1,5 +1,5 @@
-#include <private/qabstractanimation_p.h>
 #include <pybind11/pybind11.h>
+#include <private/qabstractanimation_p.h>
 
 namespace py = pybind11;
 using namespace pybind11::literals;
