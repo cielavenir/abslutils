@@ -9,7 +9,7 @@ from setuptools import setup, Extension
 from setuptools.command.build_ext import build_ext
 
 versionContext = {}
-with open('../qtinterval/version.py') as f:
+with open('../abslutils/version.py') as f:
     exec(f.read(), versionContext)
 
 # Convert distutils Windows platform specifiers to CMake -A arguments
@@ -127,18 +127,18 @@ class CMakeBuild(build_ext):
 ### end ###
 
 setup(
-    name='qtinterval',
-    description='qtinterval',
+    name='abslutils',
+    description='abslutils',
     long_description=open("../README.md").read(),
     version=versionContext['__version__'],
-    url='https://github.com/cielavenir/pybind11_playground',
+    url='https://github.com/cielavenir/abslutils',
     license='CC0',
     author='cielavenir',
     author_email='cielartisan@gmail.com',
     #setup_requires=["pybind11"],
     package_dir = {'': '..'},
-    packages=['qtinterval'],
-    ext_modules=[CMakeExtension('qtinterval.qtinterval')],
+    packages=['abslutils'],
+    ext_modules=[CMakeExtension('abslutils.abslutils')],
     cmdclass={"build_ext": CMakeBuild},
     zip_safe=False,
     include_package_data=True,
