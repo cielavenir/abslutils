@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(qtinterval LANGUAGES CXX)
+project(abslutils LANGUAGES CXX)
 
 add_subdirectory(cmake)
 
@@ -8,5 +8,5 @@ execute_process(
   OUTPUT_VARIABLE PYTHON_INSTALL_DIR OUTPUT_STRIP_TRAILING_WHITESPACE
   WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
 
-install(DIRECTORY qtinterval DESTINATION ${PYTHON_INSTALL_DIR})
-install(TARGETS qtinterval DESTINATION ${PYTHON_INSTALL_DIR}/qtinterval)
+install(DIRECTORY abslutils DESTINATION ${PYTHON_INSTALL_DIR})
+install(TARGETS abslutils DESTINATION ${PYTHON_INSTALL_DIR}/abslutils)
